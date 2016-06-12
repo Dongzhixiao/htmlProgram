@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>图片相关标签</title>
+</head>
+<body>
+    <!--定义图片-->
+    <img src="../../img/彩色插图 (1).JPG" /><br />
+    
+    <!--定义图片，指定宽。高。还有默认显示的文字-->
+    <img src="../../img/彩色插图 (2).JPG" width="300" height="120" alt="彩色插图 (2)" /><br />
+    
+    <!--定义图片，使用图片映射-->
+    <img src="../../img/彩色插图 (3).JPG" width="300" height="120" 
+    border="0" usemap="#test" alt="彩色插图 (3)" /><br />
+    <!--定义图片映射-->
+    <map name="test" id="test">
+        <!--为图片映射定义2个区域,鼠标放在图片上单机看效果-->
+        <area shape="circle" coords="57,55,25" href="http://www.baidu.com"
+        target="_blank" alt="第一个映射区域" />
+        <area shape="poly" coords="188,28,185,50,200,74,224,72,246,51" href="http://www.baidu.com"
+        target="_blank" alt="第二个映射区域" />
+    </map>
+</body>
+</html>
