@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utf-8" />
+    <title>超链接和锚点</title>
+</head>
+<body>
+    <a href="http://www.baidu.com">连接到百度的文本</a><br />
+    <!--解释target的属性
+    _self:默认值，打开自身
+    _blank:新窗口
+    _top:顶层框架
+    _parent:父框架
+    -->
+    <a href="http://www.baidu.com" target="_blank"><b>连接到百度的文本，不过新建窗口</b></a><br />
+    <a href="http://www.baidu.com" target="_blank"><img src="../image/myPicture.jpg" alt="如果图像无法显示，则代替显示的文本属性" /></a><br />
+    <a href="text.html" target="_blank">进入文本格式化标签的html</a><br />
+    <p><pre>
+    下面详细介绍href属性的值URL(Uniform Resource Locator,统一资源定位器):
+既可以是本机的相对/绝对路径，也可用是互联网上的文档，互联网格式:  <b>scheme://host.domain:port/path/fileName</b>
+解释如下：
+1.<b>scheme</b>：指定英特网服务的类型。最流行的类型是HTTP
+2.<strong>domain</strong>：指定英特网网域名，比如baidu.com    github.com等
+3.<b>host</b>：指定此域中的主机。如果省略，HTTP的默认主机是www
+4.<b>port</b>：指定主机的端口号。通常省略，HTTP的默认端口号是80
+5.<b>path</b>：指定远程服务器的路径，该路径也可被省略，省略路径默认定位到网站的根目录
+6.<b>fileName</b>：指定远程文档的名称。如果省略，通常定位到index.html/index.htm等文件，或定位到Web服务器设置的其他文件
+    下面介绍URL最流行的scheme以及其对应的资源：
+1.file：访问本地磁盘上的文件
+2.ftp：访问远程FTP服务器上的文件
+3.http：访问WWW服务器上的文件
+4.news：访问新闻组上的文件
+5.telnet：访问Telnet连接
+6.gopher：访问远程Gopher服务器上的文件
+    </pre></P>
+</body>
+</html>
+
+
+
+<!--下面详细介绍href属性的值URL(Uniform Resource Locator,统一资源定位器):
+既可以是本机的相对/绝对路径，也可用是互联网上的文档，互联网格式:scheme://host.domain:port/path/fileName
+解释如下：
+1.scheme：指定英特网服务的类型。最流行的类型是HTTP
+2.domain：指定英特网网域名，比如baidu.com    github.com等
+3.host：指定此域中的主机。如果省略，HTTP的默认主机是www
+4.port：指定主机的端口号。通常省略，HTTP的默认端口号是80
+5.path：指定远程服务器的路径，该路径也可被省略，省略路径默认定位到网站的根目录
+6.fileName：指定远程文档的名称。如果省略，通常定位到index.html/index.htm等文件，或定位到Web服务器设置的其他文件
+下面介绍URL最流行的scheme以及其对应的资源：
+1.file：访问本地磁盘上的文件
+2.ftp：访问远程FTP服务器上的文件
+3.http：访问WWW服务器上的文件
+4.news：访问新闻组上的文件
+5.telnet：访问Telnet连接
+6.gopher：访问远程Gopher服务器上的文件
+-->
