@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>可编辑属性</title>
+</head>
+<body>
+    <div contentEditable="true" style="width:500px;border:1px solid black">
+    <!--该元素的父元素有contentEditable="true",因此该表格也是可编辑的-->
+    <table style="width:420px;border-collapse:collapse" border="1">
+    <tr>
+        <td>第一个元素</td>
+        <td>第二个元素</td>
+    </tr>
+    <tr>
+        <td>第三个元素</td>
+        <td>第四个元素</td>
+    </tr>
+    </table>
+    </div>
+    <hr />
+    <!--该元素的默认不可编辑,双击后可编辑-->
+    <table style="width:420px;border-collapse:collapse" border="1"
+    ondblclick="this.contentEditable=true;">
+    <tr>
+        <td>第一个元素</td>
+        <td>第二个元素</td>
+    </tr>
+    <tr>
+        <td>第三个元素</td>
+        <td>第四个元素</td>
+    </tr>
+    </table>
+</body>
+</html>
