@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>可拖放</title>
+</head>
+<body>
+    <div id= "source" style= "width:80px;height:80px;border:1px solid black;
+    background-color:#bbb;" draggable= "true">可拖放的文字</div>
+    <script type= "text/javascript">
+        var source = document.getElementById("source");
+        source.ondragstart = function(evt)
+        {
+            //让拖动操作携带数据
+            evt.dataTransfer.setData("text/plain", "http://www.baidu.com");
+        }
+        document.ondragover = function(evt)
+        {
+            //取消事件的默认行为
+            return false;
+        }
+        document.ondrop = function(evt)
+        {
+            source.style.position = "absolute";
+            source.style.left = evt.pageX  + "px";
+            source.style.top = evt.pageY + "px";
+            //取消事件的默认行为
+            return false;
+        }
+    </script>
+    <table border="1">
+        <caption><i><b>拖放操作相关的事件</b></i></caption>
+        <tr><!--定义表格行-->
+            <th>事件</th>
+            <th>事件源</th>
+            <th>描述</th>
+        </tr>
+        <tr>
+            <td>ondragstart</td>
+            <td>被拖动的HTML元素</td>
+            <td>开始拖动操作时触发该事件</td>
+        </tr>
+        <tr>
+            <td>ondrag</td>
+            <td>被拖动的HTML元素</td>
+            <td>拖动过程中会不断触发该事件</td>
+        </tr>
+        <tr>
+            <td>ondragend</td>
+            <td>被拖动的HTML元素</td>
+            <td>拖动结束时触发该事件</td>
+        </tr>
+        <tr>
+            <td>ondragenter</td>
+            <td>拖动时鼠标经过的元素</td>
+            <td>被拖动的元素进入本元素的范围内时触发该事件</td>
+        </tr>
+        <tr>
+            <td>ondragover</td>
+            <td>拖动时鼠标经过的元素</td>
+            <td>被拖动的元素进入本元素的范围内拖动时会不断地触发该事件</td>
+        </tr>
+        <tr>
+            <td>ondragleave</td>
+            <td>拖动时鼠标经过的元素</td>
+            <td>被拖动的元素离开本元素的范围时触发该事件</td>
+        </tr>
+        <tr>
+            <td>ondrop</td>
+            <td>拖动时鼠标经过的元素</td>
+            <td>其他元素被放到本元素中时触发该事件</td>
+        </tr>
+    </table>
+</body>
+</html>
