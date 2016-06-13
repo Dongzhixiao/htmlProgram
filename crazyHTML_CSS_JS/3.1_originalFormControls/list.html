@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>列表和下拉菜单相关元素</title>
+</head>
+<body>
+    <form action= "http://www.baidu.com" method= "post"><!--post传输的数据可以比较大-->
+        <select id= "skills" name= "skills">
+            <option value= "java">java语言</option>
+            <option value= "c">c语言</option>
+            <option value= "C#">C#语言</option>
+        </select><br /><br /><br />
+        下面是允许多选的列表框:<br />
+        <select id= "books" name= "books" multiple= "multiple" size= "4">
+            <option value= "java">java书</option>
+            <option value= "c">c书</option>
+            <option value= "C#">C#书</option>
+        </select><br />
+        下面是允许多选的列表框:<br />
+        <select id= "xd" name= "xd" multiple= "multiple" size= "6">
+        <optgroup label= "书本">
+            <option value= "java">java书</option>
+            <option value= "c">c书</option>
+            <option value= "C#">C#书</option>
+        </optgroup>
+        <optgroup label= "其他书本">
+            <option value= "java">java书</option>
+            <option value= "c">c书</option>
+        </optgroup>
+        </select><br />
+        <button type= "submit">提交</button>
+    </form>
+</body>
+</html>
