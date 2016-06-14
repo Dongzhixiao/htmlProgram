@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!--暂时没有效果-->
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>output属性</title>
+</head>
+<body>
+    <form action= "do" >
+        <input id= "color1" name= "color1" type= "color" />
+        <output name= "a" for= "color1" onforminput= "innerHTML=color1.value;"></output><p>
+        <input id= "range1" name= "range1" type= "range" min= "0" max= "100" step= "5" />
+        <output name= "b" for= "range1" onforminput= "innerHTML=range1.value;"></output><p>
+        <input type= "submit" value= "提交" />
+    </form>
+</body>
+</html>
